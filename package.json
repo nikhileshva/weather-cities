@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/sequelize db:migrate && ./node_modules/.bin/sequelize db:seed:all && node ./bin/www",
+    "start": "./node_modules/.bin/sequelize db:migrate && ./node_modules/.bin/sequelize db:seed:all && mocha --exit && node ./bin/www",
     "test": "mocha --exit",
     "db:migrate": "./node_modules/.bin/sequelize --migrations-path=migrations --models-path=models --config=config/config.js db:migrate",
     "db:seed": "./node_modules/.bin/sequelize --migrations-path=migrations --models-path=models --seeders-path=seeders --config=config/config.js db:seed:all"
