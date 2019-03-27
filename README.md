@@ -5,7 +5,7 @@ Dependencies
  - postgres
 
 1. Install the application.
-After you've cloned the repository, add `.env` file. Copy from `.env.example`, and update the `OPENMAP_KEY`.
+After you've cloned the repository, add `.env` file. Copy from `.env.example`, and update the `OPENWEATHER_KEY`.
 If you want to run the app locally then also update the required database configurations in `.env`.
 
 ### [LOCAL] Steps to run the app on local
