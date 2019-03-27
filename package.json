@@ -1,0 +1,45 @@
+{
+  "name": "weather-cities",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/sequelize db:migrate && ./node_modules/.bin/sequelize db:seed:all && node ./bin/www",
+    "test": "mocha --exit",
+    "db:migrate": "./node_modules/.bin/sequelize --migrations-path=migrations --models-path=models --config=config/config.js db:migrate",
+    "db:seed": "./node_modules/.bin/sequelize --migrations-path=migrations --models-path=models --seeders-path=seeders --config=config/config.js db:seed:all"
+  },
+  "dependencies": {
+    "async": "^2.6.2",
+    "bluebird": "^3.5.3",
+    "body-parser": "~1.18.3",
+    "consign": "^0.1.6",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "dotenv": "^7.0.0",
+    "express": "~4.16.4",
+    "fs": "0.0.1-security",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.11",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "path": "^0.12.7",
+    "pg": "^7.9.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "response-time": "^2.3.2",
+    "sequelize": "^5.1.1",
+    "sequelize-cli": "^5.4.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
+  }
+}

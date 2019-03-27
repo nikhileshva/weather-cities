@@ -1,0 +1,9 @@
+node_modules/
+.idea/
+.DS_Store
+*/.DS_Store
+*.log
+*.log.*
+.env
+.vscode/
+feedback.iml
