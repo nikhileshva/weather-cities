@@ -26,5 +26,5 @@ Run `docker-compose up` to start the application.
 
 ### Approach
 - First, the cities are seeded to database. When there is a GET request, data is fetched from database. 
-- Framework used: express
+- Framework used: express (node)
 - ORM: Sequelize
