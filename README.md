@@ -9,7 +9,7 @@ After you've cloned the repository, add `.env` file. Copy from `.env.example`, a
 If you want to run the app locally then also update the required database configurations in `.env`.
 
 ### [LOCAL] Steps to run the app on local
-first, run the migrations and seeding
+first run the migrations and seeding
 ```
 npm run db:migrate
 npm run db:seed
