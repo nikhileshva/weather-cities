@@ -9,7 +9,7 @@
     "db:seed": "./node_modules/.bin/sequelize --migrations-path=migrations --models-path=models --seeders-path=seeders --config=config/config.js db:seed:all"
   },
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^2.6.4",
     "bluebird": "^3.5.3",
     "body-parser": "~1.18.3",
     "consign": "^0.1.6",
